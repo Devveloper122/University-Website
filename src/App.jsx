@@ -1,21 +1,24 @@
-import React, { createContext } from "react";
-import CompA from './CompA';
-
-
-const FirstName = createContext();
-const LastName = createContext();
+import React, { useState } from "react";
+import { useEffect } from "react";
 
 const App =()=>{
-    return (
+    const [score ,Setscore] = useState(0);
+    const [score2 ,Setscore2] = useState(0);
+    
+    // this 'useEffect' will automatically be called after render 
+    // method is called.
+    useEffect(()=>{
+        alert('I am Clicked');
+    } ,[score]);
+
+    return(
         <>
-            <FirstName.Provider value="Akhil"> 
-            <LastName.Provider value = "Singh">
-                <CompA/>
-            </LastName.Provider>
-            </FirstName.Provider >
+            <button onClick={()=>{Setscore(score+1)}}> Click me {score} </button>;
+            <br/>;
+            <button onClick={()=>{Setscore2(score2+1)}}> Click me {score2} </button>;
         </>
     );
+
 };
 
 export default App;
-export {FirstName ,LastName};
