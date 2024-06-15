@@ -1,28 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { Outlet } from "react-router";
+// import { NavLink } from "react-router-dom";
+// import Header from "./Header";
 
 const Contact=()=>{
     return (
-
         <>
-            <header>
-            <a href= "#">Logo</a>
-                <nav>
-                    <ul>
-                        <li>
-                            <NavLink to={"/"}> Home </NavLink>
-                        </li>
-
-                        <li>
-                            <NavLink to={"/About"}> About </NavLink>
-                        </li>
-
-                        <li>
-                            <NavLink to={"/Contact"}> Contact </NavLink>
-                        </li>
-                    </ul>
-                </nav>
-        </header>
+            <h1>I am Contact page</h1>
+            {/* <Outlet/> */}
         </>
     );
 };

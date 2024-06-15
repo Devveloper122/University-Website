@@ -1,27 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router";
+// import { NavLink } from "react-router-dom";
+// import Header from "./Header";
+// import { Outlet } from "react-router";
 
 const About=()=>{
+
+    const navigate111 = useNavigate();
+
+    const gotoContact =() =>{
+        navigate111("/Contact");
+    }
     return (
         <>
-            <header>
-            <a href= "#">Logo</a>
-                <nav>
-                    <ul>
-                        <li>
-                            <NavLink to={"/"}> Home </NavLink>
-                        </li>
+            <h1>I am About page</h1>
+            <button onClick={() => gotoContact()}> Go to contact page</button>
 
-                        <li>
-                            <NavLink to={"/About"}> About </NavLink>
-                        </li>
+            {/* This is bulid to navigate to previous page. */}
+            <button onClick={()=> {navigate111(-1);}}>Go to previous page</button>
+            
 
-                        <li>
-                            <NavLink to={"/Contact"}> Contact </NavLink>
-                        </li>
-                    </ul>
-                </nav>
-        </header>
         </>
     );
 };
