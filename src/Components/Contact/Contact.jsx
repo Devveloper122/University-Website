@@ -39,9 +39,9 @@ const Contact = () => {
             <h3>Send us a message  <img src={msg_icon} alt="" /></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corporis assumenda obcaecati eum officiis repellendus necessitatibus consequatur ipsum illum, velit impedit sunt debitis laboriosam ad exercitationem quae recusandae magnam modi autem, excepturi esse est, cum dolorem! Illo temporibus quasi fugiat.</p>
             <ul>
-                <li ><img src={mail_icon} alt="" />Contact@gmail.com</li>
-                <li><img src={phone_icon} alt="" />6387505058</li>
-                <li><img src={location_icon} alt="" />IIIT sonepat <br /> Miami,USA</li>
+                <li ><img src={mail_icon} alt="" />akhil123singh6@gmail.com</li>
+                <li><img src={phone_icon} alt="" />+91 6387505058</li>
+                <li><img src={location_icon} alt="" />IIIT sonepat <br /> Sonepat,Haryana</li>
             </ul>
         </div>
 
