@@ -41,7 +41,7 @@ const Contact = () => {
             <ul>
                 <li ><img src={mail_icon} alt="" />akhil123singh6@gmail.com</li>
                 <li><img src={phone_icon} alt="" />+91 6387505058</li>
-                <li><img src={location_icon} alt="" />IIIT sonepat <br /> Sonepat,Haryana</li>
+                <li><img src={location_icon} alt="" />IIIT Sonepat <br /> Sonepat,Haryana</li>
             </ul>
         </div>
 
